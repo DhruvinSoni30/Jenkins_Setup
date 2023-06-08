@@ -1,5 +1,5 @@
 # Stack name
-project_name = "Jenkins-Prod"
+project_name = "jenkins-prod"
 
 # Jenkins instance type
 jenkins_instance_type = "t2.micro"
