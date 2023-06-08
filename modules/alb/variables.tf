@@ -45,7 +45,7 @@ variable "health_check" {
     "timeout"             = "10"
     "interval"            = "20"
     "path"                = "/"
-    "port"                = "80"
+    "port"                = "8080"
     "unhealthy_threshold" = "2"
     "healthy_threshold"   = "3"
   }
