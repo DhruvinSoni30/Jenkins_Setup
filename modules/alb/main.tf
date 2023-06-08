@@ -18,7 +18,7 @@ resource "aws_lb" "application_load_balancer" {
 # Create Listener
 resource "aws_lb_listener" "application_load_balancer_listener" {
   load_balancer_arn = aws_lb.application_load_balancer.arn
-  port              = 80
+  port              = 8080
   protocol          = "HTTP"
 
   default_action {
@@ -36,7 +36,7 @@ resource "aws_lb_listener" "application_load_balancer_listener" {
 # Create Target Group
 resource "aws_lb_target_group" "alb_target_group" {
   name     = "${var.project_name}-tg-group"
-  port     = 80
+  port     = 8080
   protocol = "HTTP"
   vpc_id   = var.vpc_id
 
